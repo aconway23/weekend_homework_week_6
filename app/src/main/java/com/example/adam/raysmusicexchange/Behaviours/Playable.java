@@ -1,4 +1,4 @@
-package com.example.adam.raysmusicexchange;
+package com.example.adam.raysmusicexchange.Behaviours;
 
 /**
  * Created by adam on 03/11/2017.
@@ -7,4 +7,8 @@ package com.example.adam.raysmusicexchange;
 public interface Playable {
 
     void play(String text);
+
+
 }
+
+

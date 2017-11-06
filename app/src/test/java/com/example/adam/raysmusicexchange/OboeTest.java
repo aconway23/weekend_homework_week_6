@@ -15,7 +15,7 @@ public class OboeTest {
 
     @Test
     public void hasName() {
-        Oboe oboe = new Oboe("Funky Oboe", 3);
+        Oboe oboe = new Oboe("Funky Oboe", 3, "Black");
         String name = oboe.name();
         assertEquals("Funky Oboe", name);
 
@@ -23,9 +23,16 @@ public class OboeTest {
 
     @Test
     public void checkNumberOfKeys() {
-        Oboe oboe = new Oboe("Funky Oboe", 3);
+        Oboe oboe = new Oboe("Funky Oboe", 3, "Black");
         int numberOfKeys = oboe.getNumberOfKeys();
         assertEquals(3, numberOfKeys);
+    }
+
+    @Test
+    public void oboeHasColour() {
+        Oboe oboe = new Oboe("Funky Oboe", 3, "Black");
+        String colour = oboe.colour();
+        assertEquals("Black", colour);
     }
 
 }
